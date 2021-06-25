@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SurveyForm</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+        <div class="header">
+        <h1 id="title">SITS Survey form</h1>
+         <p id="description">We appreciate your valuable contribution enhancing performance of our institute.</p>
+        </div>
+        <div class="container">
+        <form id="survey-form">
+          <label for="name" id="name-label"> Name
+            </label><br/>
+          <input id="name" type="text" placeholder="Enter Your Name" required>
+          <br/>
+          <label for="email" id="email-label"> Email
+            </label>
+          <br/>
+          <input id="email" type="email" placeholder="Enter Your Email" required>
+          <br>
+          <label for="age" id="number-label"> Age
+            </label><br/>
+          <input id="number" type="number" min="15" max="40" placeholder="Enter Your Age">
+           <br>
+          <label for="dropdown" id="role-label"> Select the option that describes your current role
+            </label><br/>
+          <select id="dropdown">
+            <option value="default">Select your current role</option>
+            <option value="student">Student</option>
+            <option value="Fulltimejob">Full Time Job</option>
+            <option value="Parttimejob">Part Time Job</option>
+            <option value="lookingforjob">Looking for Job</option>
+            <option value="other">Other</option>
+         </select>
+          <br/><br/>
+          <div class="rdstyle">
+         <label for="radio">Would you recommend SITS to your friend? </label>
+          <br/>
+          <input type="radio" name="recom" value="definitely" >Definitely
+          <br/>
+          <input type="radio" name="recom" value="maybe">Maybe
+          <br/>
+          <input type="radio" name="recom" value="notsure">Not Sure
+          </div>
+          <br/>
+          
+         <label for="frontend"> What would you like to see improved?(check all that apply)</label>
+         <br/>
+         <div class="rdstyle">
+          <input type="checkbox" id="frontend" value="frontendtutorials">Front End Tutorials
+          <br/>
+        <input type="checkbox" id="backend" value="backendprojects">Back End Projects
+         <br/>
+        <input type="checkbox" id="tests" value="tests">Practice Tests
+         <br/>
+        <input type="checkbox" id="notes" value="Notes">Study Material Provided
+          <br/>
+        <input type="checkbox" id="mentoring" value="Mentoring">Mentoring 
+        </div>
+        <br/>
+          
+          <label for="comments"> We welcome your suggestions and comments</label>
+          <br/>
+          <textarea id="comments" placeholder="Enter your comments here" row="5" cols="50"></textarea>
+          <br>
+          <button id="submit" type="submit" value="Submit"> Submit
+          </form>
+          </div>
+          
+        
+</body>
+</html>
